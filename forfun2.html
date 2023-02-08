@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<! --This is my first coment in HTML! -->
+<! --This is my second comment! -->
+<! -- You ever just sit and wonder why Bologna is spelled the way it is? -->
+	<html>
+		<body>
+			<h1>Hello World</h1>
+				<! -- This commenting stuff is really cool! -->
+				<p>Hey, I'm Gary Carmine. I died before I was cool!</p>
+				<! --Gary Carmine is a character from Gears of War 4, which is a video game if you didn't know -->
+				<img src="https://static.wikia.nocookie.net/gearsofwar/images/a/a6/Gary_Carmine_Gears_5.png/revision/latest?cb=20210717223746" alt="Image of Gary Carmine">
+			<h2>Pick a Character!</h2>
+				<label for="characters">Choose a characters:</label>
+				<select id="characters" name="characters">
+					<option value="garycarmine">GaryCarmine</option>
+					<option value="joel">Joel</option>
+					<option value="cortanna">Cortanna</option>
+					<option value="bilbo">Bilbo</option>
+				</select>
+			<style>
+			table, th, td {
+				border:1px solid black;
+}
+			</style>
+		<body>
+
+			<h2>Table of Heroes!</h2>
+
+			<table style="width:100%">
+				<tr>
+					<th>Character Name</th>
+					<th>Game of Origin</th>
+					<th>Status</th>
+				</tr>
+				<tr>
+					<td>Master Chief</td>
+					<td>Halo Combat Evolved</td>
+					<td>Alive</td>
+				</tr>
+				<tr>
+					<td>Mario</td>
+					<td>Donkeykong</td>
+					<td>Alive</td>
+					</tr>
+					</table>
+		</body>
+<title>Block Elements</title>
+	</head>
+	<body>
+		<h1>Hiroshi Sugimoto</h1>	<p>The dates for the ORIGIN OF ART exhibition are as follows:</p>	<ul>	<li>Science: 21 Nov - 20 Feb 2010/11</li>	<li>Architecture: 6 Mar - 15 May 2011</li>	<li>History: 29 May - 21 Aug 2011</li>	<li>Religion: 28 Aug - 6 Nov 2011</li>	</ul>
+	</body>
+			<h2>Trying Iframes</h2>
+			<p>This is Halo Waypoint, an official Halo fan page:</p>
+
+				<iframe src="https://www.halowaypoint.com" title="halowaypoint"></iframe>
+				
+				<iframe width="420" height="345" src="https://youtu.be/zN9xDuY1IjQ">
+				</iframe>
+<! --This has audio and video built into it, so it serves as dual purpose -->
+
+		<p>Click the button to get your coordinates.</p>
+
+			<button onclick="getLocation()">Try It</button>
+
+			<p id="demo"></p>
+
+				<script>
+					var x = document.getElementById("demo");
+
+						function getLocation() {
+							if (navigator.geolocation) {
+						navigator.geolocation.getCurrentPosition(showPosition);
+						} else { 
+						x.innerHTML = "Geolocation is not supported by this browser.";
+						}
+						}
+
+						function showPosition(position) {
+						x.innerHTML = "Latitude: " + position.coords.latitude + 
+						"<br>Longitude: " + position.coords.longitude;
+						}
+				</script>
+				
+				<canvas id="myCanvas" width="200" height="100"
+					style="border:1px solid #c3c3c3;">
+					Your browser does not support the canvas element.
+				</canvas>
+
+					<script>
+						var canvas = document.getElementById("myCanvas");
+						var ctx = canvas.getContext("2d");
+						ctx.fillStyle = "#FF0000";
+						ctx.fillRect(25,12,150,75);
+					</script>
+
+
+		</body>
+	</html>
